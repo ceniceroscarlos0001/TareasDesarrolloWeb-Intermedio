@@ -1,0 +1,58 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: #4568DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #B06AB3, #4568DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #B06AB3, #4568DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.contenedor{
+	width: 800px;
+    height: 600px;
+    margin: 40px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	/*border: solid;*/
+	background-color: white;
+	border-radius: 5%;
+}
+
+.encabezado{
+	width: 800px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: solid;*/
+}
+
+.carousel {
+	width: 750px;
+	height:500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*border: solid;*/
+	background-color: lightskyblue;
+}
+
+.carousel-item{
+	width: 800px;
+	height:500px;
+}
+
+.carousel-item img{
+	height: 100%;
+}
+
+.carousel-caption{
+	background-color: gray;
+}
+
+
