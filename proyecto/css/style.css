@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+}
+
+header{
+    height: 10vh;
+    width: 95vw;
+    /*border: solid;*/
+    position: fixed;
+    left: 2%;
+    z-index: 100;
+}
+
+.contenedor1{
+    margin: auto;
+    width: 50vw;
+    /*border: solid;*/
+    position: relative;
+    display: grid;
+    grid-row: 7;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.blanco{
+    height: 10vh;
+}
+
+.pub{
+    border: solid 2px black;
+    height: 500px;
+    width: 40vw;
+    border-radius: 2%;
+    background-color: black;
+}
+
+.user{
+    width: 100%;
+    height: 20%;
+    /*border: solid;*/
+    display: flex;
+    align-items: center;
+}
+
+.user > a{
+    color: white;
+}
+
+.user > .profpic{
+    height: 50px;
+    width: 50px;
+    /*border: solid;*/
+    border-radius: 50%;
+}
+
+.user > .profpic > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cont{
+    width: 100%;
+    height: 80%;
+    /*border: solid;*/
+    display: grid;
+    grid-template-areas: 
+    "a1 a1 a1 a1 a2 a2"
+    "a1 a1 a1 a1 a2 a2"
+    "a1 a1 a1 a1 a3 a3"
+    "a1 a1 a1 a1 a3 a3";
+}
+
+.fot{
+    grid-area: a1;
+    /*border: solid;*/
+}
+
+.fot > img{
+    height: 100%;
+    width: 100%;
+}
+
+.vid{
+    grid-area: a2;
+    /*border: solid;*/
+    display: flex;
+}
+
+.vid > iframe{
+    height: 100%;
+    width: 100%;
+}
+.car{
+    grid-area: a3;
+    /*border: solid;*/
+}
+
+.car > .carousel{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    height: 10vh;
+    width: 95vw;
+    /*border: solid;*/
+    position: relative;
+    left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.carousel {
+    height: 100%;
+    width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pub:hover{
+    animation: animate 2.5s forwards;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(0) rotate(120deg) scale(1);
+    }
+
+    50% {
+        transform: translate(0) scale(1.5) rotate(240deg);
+    }
+
+    100% {
+        transform: translate(0) scale(1) rotate(360deg);
+    }
+}
+
+.contenedor2{
+    position: relative;
+    left: 5%;
+    width: 90vw;
+    height: 500px;
+    display: grid;
+    /*border: solid;*/
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.card{
+    height: 250px;
+    width: 250px;
+    display: flex;
+}
+
+.card > img{
+    height: 100%;
+    width: 100%;
+}
+
+.card:hover{
+    animation: animate 2.5s forwards;
+}
